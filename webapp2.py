@@ -11,7 +11,7 @@ class MainApp:
     def default(self, *args, **kwargs):
         #return 'Hello World'
         page = Template(filename='./template/page.html')
-        return page.render(data='Random Number : '+str(randint(1,100)))
+        return page.render(data='Random Number : '+str(randint(1,200)))
     #
 #
 
@@ -24,7 +24,7 @@ def serve():
     'engine.autoreload.on': False,
     'tools.sessions.on': True,
     'server.socket_host': '127.0.0.1',
-    'server.socket_port': 8080,
+    'server.socket_port': 8888,
     })
 
     config = dict()
